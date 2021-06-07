@@ -6,7 +6,7 @@ public class Klas {
 
         public Klas(Integer nummer){
             this.nummer = nummer;
-            this.personen = new ArrayList<Persoon>();
+            this.personen = new ArrayList<>();
         }
 
         public Integer geefKlas(Integer leeftijd){

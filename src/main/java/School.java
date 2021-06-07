@@ -7,7 +7,7 @@ public class School {
 
         public School(String naam){
             this.naam = naam;
-            this.klassen = new ArrayList<Klas>();
+            this.klassen = new ArrayList<>();
             Klas klas1 = new Klas(1);
             Klas klas2 = new Klas(2);
             Klas klas3 = new Klas(3);
