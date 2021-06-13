@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Login {
     private static Login singleton;
@@ -17,13 +18,21 @@ public class Login {
         return singleton;
     }
 
-    public boolean loginCheck(String gebruikersnaam, String wachtwoord){
+    public boolean loginCheck(String gn, String ww){
         for(Gebruiker gebruiker : gebruikers){
-            if(gebruikersnaam.equals(gebruiker.getGebruikersnaam()) && wachtwoord.equals(gebruiker.getWachtwoord())){
+            if(gn.equals(gebruiker.getGebruikersnaam()) && ww.equals(gebruiker.getWachtwoord())){
                 ingelogdeGebruiker = gebruiker;
                 return true;
             }
         }
         return false;
+    }
+
+    public ArrayList<Gebruiker> getGebruikers() {
+        return gebruikers;
+    }
+
+    public Gebruiker getIngelogdeGebruiker() {
+        return ingelogdeGebruiker;
     }
 }

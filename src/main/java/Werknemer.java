@@ -5,7 +5,7 @@ public class Werknemer extends Persoon {
     private String taak;
 
     public Werknemer(String naam, String taak){
-        this.naam = naam;
+        super(naam);
         this.taak = taak;
     }
 
@@ -25,7 +25,7 @@ public class Werknemer extends Persoon {
         System.out.println(this.taak);
     }
 
-    @Override
+
     public String getNaam() {
         return super.getNaam();
     }

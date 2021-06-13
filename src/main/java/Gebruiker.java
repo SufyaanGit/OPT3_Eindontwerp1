@@ -5,6 +5,7 @@ public class Gebruiker {
     public Gebruiker(String gebruikersnaam, String wachtwoord){
         this.gebruikersnaam = gebruikersnaam;
         this.wachtwoord = wachtwoord;
+        Login.getInstance().getGebruikers().add(this);
     }
 
     public String getGebruikersnaam() {

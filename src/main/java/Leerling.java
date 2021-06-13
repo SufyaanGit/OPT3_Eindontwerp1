@@ -4,7 +4,7 @@ public class Leerling extends Persoon{
     private Integer leeftijd;
 
     public Leerling(String naam, Integer leeftijd){
-        this.naam = naam;
+        super(naam);
         this.leeftijd = leeftijd;
     }
 
@@ -25,7 +25,7 @@ public class Leerling extends Persoon{
     }
 
 
-    @Override
+
     public String getNaam() {
         return super.getNaam();
     }
